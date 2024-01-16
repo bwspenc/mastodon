@@ -42,7 +42,7 @@ ifeq ($(wildcard $(BLACKBEAR_DIR)/Makefile),)
   $(info Could not find BlackBear, so not compiling with it)
 else
   APPLICATION_DIR    := $(BLACKBEAR_DIR)
-  APPLICATION_NAME   := blackbear
+  APPLICATION_NAME   := black_bear
   include            $(FRAMEWORK_DIR)/app.mk
   ADDITIONAL_CPPFLAGS += -DBLACKBEAR_ENABLED
   APP_HEADERS        := $(APP_HEADERS) $(app_HEADER)
